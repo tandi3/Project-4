@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PINNACLE PULSE FITNESS WORLD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="signup">
+            <header>
+        <div class="navbar">
+            <div class="logo"><a href="home.html">Pinnacle Pulse fitness Tracker</a></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="index.html" class="active">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </header>
+    </ul>
+   </header>
+<main>
+    <section>
+        <h2>Sign Up for Pinnacle Pulse fitness Tracker here:</h2>
+        <form id="signup-form">               
+            <section class="form-container">
+                <h1>Sign Up</h1>
+                <form id="signupForm">
+                  <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <small class="error-message" id="usernameError"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <small class="error-message" id="emailError"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <small class="error-message" id="passwordError"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                    <small class="error-message" id="confirmPasswordError"></small>
+                  </div>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <small id="successMessage" class="success-message"></small>
+
+                  <p>Already have an account? <a href="index.html">Log in</a></p>
+
+                </form>
+
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Pinnacle Pulse Fitness World. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

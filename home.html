@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PINNACLE PULSE FITNESS WORLD - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="Home">
+    <!-- Header with Naviagation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="home.html"></a>Pinnacle Pulse Fitness World</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="track.html">Track</a></li>
+                <li><a href="stats.html">stats</a></li>
+                <li><a href="index.html" id="Login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Welcome to Pinnacle Pulse Fitness World!</h2>
+            <p>Track your fitness and stay motivated!</p>
+            <a href="stats.html" class="btn">View Stats</a>
+
+
+            <h2>Please enter your log in details below.</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required/>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required/>
+                
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+
+                <button type="submit">Log in</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+        </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Pinnacle Pulse Fitness World. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

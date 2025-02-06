@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINNACLE PULSE FITNESS WORLD - Stats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Header with Naviagation -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="stats.html">Pinnacle Pulse Fitness World</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="track.html">Track</a></li>
+            <li><a href="stats.html">stats</a></li>
+            <li><a href="index.html" id="login">Login</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+    <main>
+        <section>
+            <h2>Your fitness Stats</h2>
+            <!-- Filter Form -->
+             <form id="filter-form">
+                <label for="filter-type">Fliter by Workout Type:</label>
+                <input type="text" id="filter-type" name="filter-type" placeholder="e.g., Swimming">
+
+                <label for="filter-start-date">Start Date:</label>
+                <input type="date" id="filter-start-date" name="filter-start-date">
+
+                <label for="filter-end-date">End Date:</label>
+                <input type="date" id="filter-end-date" name="filter-end-date">
+
+                <button type="submit">Apply Filter</button>
+             </form>
+
+             <!-- Workout List -->
+            <ul id="Workout-list">
+                <!--Filtered workouts will appear here -->
+            </ul>
+            <canvas id="workoutChart" width="400" height="200"></canvas>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pinnacle Pulse Fitness World. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <button id="export-csv">Export Workouts as CSV</button>
+
+</body>
+</html>

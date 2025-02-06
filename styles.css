@@ -1,0 +1,473 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+
+body {
+    color: #fff;
+    background-color: #1a1a2e; /* Dark purple background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+/* Header and Navigation */
+header {
+    background: rgba(50, 50, 80, 0.9);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9a8cff;
+ }
+
+ .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+ }
+ 
+ .nav-links li a{
+    color: #ccc;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+ }
+
+ .nav-links li a:hover,
+ .nav-links li a.active {
+    color:#9a8cff;
+ }
+
+ /* Hamburger Menu (for smaller screens) */
+ .hamburger {
+    display: none;
+    cursor: pointer;
+ }
+
+ .hamburger span{
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: #9a8cff;
+    margin: 5px 0;    
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+ 
+ .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background: rgba(50, 50, 80, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+ }
+
+
+/* Section Styling */
+main section{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e3e3ff;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #dcdde1;
+}
+
+a.btn{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #9a8cff;
+    color: #1a1a2e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #6f63c6;
+}
+
+/* Footer Styling */
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(30, 30, 50, 0.95);
+    color: #9a8cff;
+    margin-top: 2rem;
+}
+
+/* Background Images (Specific Pages) */
+
+body[data-page="stats"] {
+    background-image: url(dark-purple-twilight-spread-over-silhouetted-city-lvo4s3ffxo8dyw2m.webp);
+}
+
+body[data-page="signup"] {
+    background-image: url(vintage-typewriter-with-a-blank-sheet-1gwesfdq1b2497yn.webp);
+}
+
+
+/* Form Styling */
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(50, 50, 80, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color:#e3e3ff;
+}
+
+form input{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #9f9fd6;
+    color: #fff;
+}
+
+form button{
+    width: 100%;
+    padding: 0.8rem;
+    background: #483e91;
+    color: #1a1a2e;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #6f63c6;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #4c4c7a;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    color: #4c4c7a;
+    box-shadow: 0px, 4px, 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4c4c7a;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cccccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  input:focus {
+    outline: 2px solid #6a61a1;
+  }
+  
+  .error-message {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+  }
+  
+  .success-message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #28a745;
+  }
+  
+  button {
+    background-color: #747183;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4c4c7a;
+  }
+  
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+    .nav-links{
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 0.6rem 1.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn:hover{
+        transform: scale(1.05);
+        background: #6f63c6;
+    }
+}
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #f8f8f8;
+    background: #2a2a3c;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4c4c7a;
+    padding: 1rem 2rem;
+  }
+  
+  header .navbar a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  header .navbar a.active {
+    border-bottom: 2px solid #f8f8f8;
+  }
+  
+  header .navbar .logo a {
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    background: url('download.jpeg') no-repeat center center/cover;
+    color: #140303;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content .btn {
+    background-color: #6a61a1;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #4c4c7a;
+  }
+  
+  .features {
+    background-color: #38384f;
+    padding: 3rem 2rem;
+  }
+  
+  .features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: #4c4c7a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .feature-card h3 {
+    margin: 1rem 0;
+  }
+  
+  .feature-card p {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
+  .testimonial {
+    background: url('images 6.jpeg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-weight: bold;
+  }
+  
+  .testimonial h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial footer {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+
+/* Default settings for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color for readability */
+  }
+  
+  /* Track Page */
+  body[data-page="track"] {
+    background-image: url('dark-purple-neon-maze-s2x012dkop5707se.webp'); /* Replace with your track page image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates a parallax effect */
+    background-repeat: no-repeat;
+  }
+  
+  /* Stats Page */
+  body[data-page="stats"] {
+    background-image: url('vintage-typewriter-with-a-blank-sheet-1gwesfdq1b2497yn.webp'); /* Replace with your stats page image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  /* Index Page (Login) */
+  body[data-page="login"] {
+    background-image: url('dark-purple-twilight-spread-over-silhouetted-city-lvo4s3ffxo8dyw2m.webp'); /* Replace with your login page image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  /* Content overlay */
+  main {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  

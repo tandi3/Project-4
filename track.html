@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINNACLE PULSE FITNESS WORLD - Track</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="track">
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="track.html">Pinnacle Pulse Fitness World</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="track.html">Track</a></li>
+                <li><a href="stats.html">stats</a></li>
+                <li><a href="index.html" id="login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h2>Track Your Workout Sessions</h2>
+        <form id="Workout-form">
+            <label for="Workout-type">Workout Type:</label>
+            <input type="text" id="Workout-type" name="Workout-type" required>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" reaquired>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Add Workout</button>
+        </form>
+        <div id="Success-message" style="display: none; color: green;">Workout added successfully!</div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Pinnacle Pulse Fitness World. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
